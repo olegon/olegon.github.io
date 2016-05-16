@@ -1,16 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Minha página do Github</title>
+    <title>Leandro Oliveira</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <h1>Minha página no Gitub</h1>
-    <p>Mais conteúdo em breve.</p>
+    <main class="container">
+        <header class="apresentacao">
+            <img src="http://placekitten.com/50/50" alt="Minha foto" class="foto" />
+            <h1 class="nome">Leandro G. de Oliveira</h1>
+            <h2 class="cargo">Desenvolvedor Web</h2>
+        </header>
+
+        <section class="projetos">
+            <h1>Projetos</h1>
+
+            <div class="projetos-container">
+                <div class="projeto">
+                    <a href="http://www.aduaneiras.com.br/">
+                        <img class="imagem imagem-direita" src="http://placekitten.com/300/150" alt="" />
+                    </a>
+                    <p class="descricao">
+                        Site da Aduaneiras
+                    </p>
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="projeto">
+                    <a href="https://github.com/olegon/html5-snake">
+                        <img class="imagem imagem-esquerda" src="http://placekitten.com/300/150" alt="" />
+                    </a>
+                    <p class="descricao">
+                        <i>Remake</i> do jogo Snake feito com HTML5, CanvasRenderingContext2D e TypeScript.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="clear"></div>
+
+        <footer class="contatos">
+            <!-- <a href="https://facebook.com/ol3gon" class="icon icon-facebook">ol3gon</a> -->
+            <a href="https://twitter.com/_olegon" class="icon icon-twitter">@_olegon</a>
+            <a href="https://github.com/olegon" class="icon icon-github">olegon</a>
+            <a href="https://linkedin.com/in/olegonc" class="icon icon-linkedin">olegon</a>
+        </footer>
+    </main>
 </body>
 
 </html>
