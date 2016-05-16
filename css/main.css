@@ -1,25 +1,10 @@
-body {
-    font-family: 'Open Sans', 'Arial', sans-serif;
-    font-size: 14px;
-    line-height: 1.4em;
-}
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 15px;
-}
-
-.clear {
-    clear: both;
-}
-
 .apresentacao {
-    font-size: 1em;
+    padding: 1rem;
 }
 
 .apresentacao .foto {
-    display: none;
+    border-radius: 50%;
+    width: 128px;
 }
 
 .apresentacao .nome {
@@ -36,76 +21,6 @@ body {
     color: #ED1C24;
 }
 
-.projetos {
-    margin-top: 5rem;
-    border-top: 1px solid #DDD;
-
-}
-
-.projetos .projeto {
-    margin-top: 1rem;
-}
-
-.projetos .projeto .imagem {
-    border-radius: 6px 0 6px 0;
-}
-
-.projetos .projeto .imagem-esquerda {
-    float: left;
-    margin-right: 15px;
-}
-
-.projetos .projeto .imagem-direita {
-    float: right;
-    margin-left: 15px;
-}
-
-.projetos .projeto .descricao {
-    padding: 0.5rem;
-}
-
 .contatos {
     margin-top: 5rem;
-    text-align: center;
-}
-
-.contatos a {
-    text-decoration: none;
-    color: #27AAE1;
-    margin-right: 1.5rem;
-}
-
-.icon::before {
-    font-family: FontAwesome;
-    font-size: 1rem;
-    color: #000;
-    margin-right: 0.25em;
-}
-
-.icon-github::before {
-    content:  "\f09b";
-}
-
-.icon-facebook::before {
-    content:  "\f09a";
-}
-
-.icon-twitter::before {
-    content:  "\f099";
-}
-
-.icon-linkedin::before {
-    content: "\f0e1";
-}
-
-
-@media screen and (min-width: 480px) {
-    .apresentacao .foto {
-        display: block;
-
-        float: left;
-        width: 50px;
-        border-radius: 50%;
-        margin-right: 0.5em;
-    }
 }

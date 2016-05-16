@@ -8,56 +8,66 @@
 
     <title>Leandro Oliveira</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body style="display: none;">
-    <main class="container">
-        <header class="apresentacao">
-            <img src="http://placekitten.com/50/50" alt="Minha foto" class="foto" />
-            <h1 class="nome">Leandro G. de Oliveira</h1>
-            <h2 class="cargo">Desenvolvedor Web</h2>
+<body>
+    <div class="container">
+        <header class="row apresentacao">
+            <div class="col-sm-4">
+                <img class="img-responsive center-block foto" src="resources/imagem-perfil.jpeg" alt="Minha foto" />
+            </div>
+            <div class="col-sm-8">
+                <h1 class="nome">Leandro Gonçalves de Oliveira</h1>
+                <h2 class="cargo">Desenvolvedor Web</h2>
+            </div>
         </header>
 
-        <section class="projetos">
+        <!-- <section class="row projetos">
             <h1>Projetos</h1>
 
-            <div class="projetos-container">
-                <div class="projeto">
+            <div class="row projeto">
+                <div class="col-sm-3">
                     <a href="http://www.aduaneiras.com.br/">
-                        <img class="imagem imagem-direita" src="http://placekitten.com/300/150" alt="" />
+                        <img class="img-responsive center-block" src="http://placekitten.com/300/150" alt="" />
                     </a>
-                    <p class="descricao">
-                        Site da Aduaneiras
-                    </p>
                 </div>
-
-                <div class="clear"></div>
-
-                <div class="projeto">
-                    <a href="https://github.com/olegon/html5-snake">
-                        <img class="imagem imagem-esquerda" src="http://placekitten.com/300/150" alt="" />
-                    </a>
-                    <p class="descricao">
-                        <i>Remake</i> do jogo Snake feito com HTML5, CanvasRenderingContext2D e TypeScript.
-                    </p>
+                <div class="col-sm-9">
+                    <p class="descricao">Site da Aduaneiras</p>
                 </div>
             </div>
-        </section>
+
+            <div class="row projeto">
+                <div class="col-sm-3 col-md-push-9">
+                    <a href="https://github.com/olegon/html5-snake">
+                        <img class="img-responsive center-block" src="http://placekitten.com/300/150" alt="" />
+                    </a>
+                </div>
+                <div class="col-sm-9 col-md-pull-3">
+                    <p class="descricao"><i>Remake</i> do jogo Snake feito com HTML5, CanvasRenderingContext2D e TypeScript.</p>
+                </div>
+            </div>
+        </section> -->
 
 
-        <div class="clear"></div>
-
-        <footer class="contatos">
+        <footer class="row text-center contatos">
             <!-- <a href="https://facebook.com/ol3gon" class="icon icon-facebook">ol3gon</a> -->
-            <a href="https://twitter.com/_olegon" class="icon icon-twitter">@_olegon</a>
-            <a href="https://github.com/olegon" class="icon icon-github">olegon</a>
-            <a href="https://linkedin.com/in/olegonc" class="icon icon-linkedin">olegon</a>
+            <div class="col-xs-4">
+                <a href="https://twitter.com/_olegon" class="fa fa-twitter"> @_olegon</a>
+            </div>
+            <div class="col-xs-4">
+                <a href="https://github.com/olegon" class="fa fa-github"> olegon</a>
+            </div>
+            <div class="col-xs-4">
+                <a href="https://linkedin.com/in/olegonc" class="fa fa-linkedin"> olegon</a>
+            </div>
         </footer>
-    </main>
+    </div>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
 </body>
 
 </html>
