@@ -37,7 +37,9 @@ gulp.task('watch', function() {
 
 gulp.task('deploy', function() {
     return gulp.src('./dist/**/*')
-        .pipe(ghPages());
+        .pipe(ghPages({
+            branch: 'master'
+        }));
 });
 
 gulp.task('default', ['html', 'css', 'image']);
