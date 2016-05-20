@@ -4,6 +4,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var postcss = require('gulp-postcss');
 var htmlmin = require('gulp-htmlmin');
 var imagemin = require('gulp-imagemin');
+var ghPages = require('gulp-gh-pages');
 
 gulp.task('html', function() {
     return gulp.src('src/*.html')
@@ -32,6 +33,11 @@ gulp.task('image', function() {
 
 gulp.task('watch', function() {
     return gulp.watch('src/**/*', ['default']);
+});
+
+gulp.task('deploy', function() {
+    return gulp.src('./dist/**/*')
+        .pipe(ghPages());
 });
 
 gulp.task('default', ['html', 'css', 'image']);
