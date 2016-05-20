@@ -13,6 +13,18 @@
     font-family: cursive;
 }
 
+.meus-projetos {
+    margin-top: 5rem;
+}
+
 .contatos {
     margin-top: 5rem;
+}
+
+.contatos .social a {
+    padding: 16px;
+}
+
+.contatos .social a::before {
+    margin-right: 0.25em;
 }
