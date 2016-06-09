@@ -8,27 +8,36 @@
 }
 
 .apresentacao .nome::first-letter {
-    margin: 0;
-    color: #ED1C24;
-    font-family: cursive;
+    color: #c00;
 }
 
 .meus-projetos {
-    margin-top: 5rem;
+    margin-top: 1rem;
+}
+
+.meus-projetos > .row {
+    margin-top: 2rem;
 }
 
 .projeto {
-    padding-top: 1em;
+
 }
 
 .contatos {
     margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .contatos .social a {
     padding: 16px;
+    text-decoration: none;
 }
 
 .contatos .social a::before {
     margin-right: 0.25em;
+
+}
+
+.contatos .social a:hover {
+    color: #de820d;
 }

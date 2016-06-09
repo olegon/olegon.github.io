@@ -1,2 +1,2 @@
-.apresentacao{padding:1rem}.apresentacao .foto{border-radius:50%;width:128px}.apresentacao .nome:first-letter{margin:0;color:#ed1c24;font-family:cursive}.meus-projetos{margin-top:5rem}.projeto{padding-top:1em}.contatos{margin-top:5rem}.contatos .social a{padding:16px}.contatos .social a:before{margin-right:.25em}
+.apresentacao{padding:1rem}.apresentacao .foto{border-radius:50%;width:128px}.apresentacao .nome:first-letter{color:#c00}.meus-projetos{margin-top:1rem}.meus-projetos>.row{margin-top:2rem}.contatos{margin-top:5rem;margin-bottom:5rem}.contatos .social a{padding:16px;text-decoration:none}.contatos .social a:before{margin-right:.25em}.contatos .social a:hover{color:#de820d}
 /*# sourceMappingURL=main.css.map */
