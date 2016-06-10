@@ -1,0 +1,65 @@
+$link-hover-color: #E87754;
+
+html,
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.btn {
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s;
+
+
+    &:hover {
+        box-shadow: 0 25px 20px -12px rgba(0, 0, 0, 0.2);
+        background-color: darken(#fff, 5%);
+        transform: translate3d(0, -3px, 0);
+    }
+
+    &.btn-primary:hover {
+        background-color: $link-hover-color;
+        border-color: darken($link-hover-color, 10%);
+    }
+}
+
+.apresentacao {
+    padding: 1rem;
+
+    .foto {
+        border-radius: 50%;
+        width: 128px;
+    }
+
+    .nome::first-letter {
+        color: #c00;
+    }
+}
+
+.meus-projetos {
+    margin-top: 1rem;
+
+    & > .row {
+        margin-top: 2rem;
+    }
+}
+
+.contatos {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    .social {
+        a {
+            padding: 16px;
+            text-decoration: none;
+
+            &::before {
+                margin-right: 0.25em;
+            }
+
+            &:hover {
+                color: $link-hover-color;
+            }
+        }
+    }
+}
