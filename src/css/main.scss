@@ -5,6 +5,34 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+.main-header {
+    background: #5f2c82; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #5f2c82 , #49a09d); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #5f2c82 , #49a09d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    height: 100vh;
+    color: #fff;
+    margin-bottom: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .minha-foto {
+        border-radius: 50%;
+        width: 16rem;
+    }
+
+    .nome,
+    .profissao {
+        background-color: rgba(0, 0, 0, 0.15);
+        padding: 0.25em 0.5em;
+        text-align: center;
+        border-radius: 3px;
+    }
+}
+
 
 .btn {
     box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.4);
@@ -23,24 +51,21 @@ body {
     }
 }
 
-.apresentacao {
-    padding: 1rem;
-
-    .foto {
-        border-radius: 50%;
-        width: 128px;
-    }
-
-    .nome::first-letter {
-        color: #c00;
-    }
-}
-
 .meus-projetos {
     margin-top: 1rem;
 
     & > .row {
         margin-top: 2rem;
+    }
+
+    & > .row.quote {
+        margin-top: 7rem;
+    }
+
+    .projeto {
+        p {
+            color: #666;
+        }
     }
 }
 
