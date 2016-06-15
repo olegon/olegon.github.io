@@ -19,12 +19,12 @@ gulp.task('html', function() {
 });
 
 gulp.task('css', function() {
-    return gulp.src('./src/**/*.scss')
+    return gulp.src('./src/css/main.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(sourcemaps.init())
         .pipe(postcss([require('autoprefixer'), require('cssnano')]))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('./dist/css'));
 });
 
 gulp.task('image', function() {
