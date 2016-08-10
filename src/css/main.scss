@@ -55,17 +55,27 @@ body {
 }
 
 .meus-projetos {
-    margin-top: 1rem;
-
-    & > .row {
-        margin-top: 2rem;
-    }
+    text-align: center;
+    padding-top: 4rem;
 
     & > .row.quote {
-        margin-top: 7rem;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+
+        blockquote {
+            border: none;
+
+
+            p {
+                color: #666;
+            }
+        }
     }
 
     .projeto {
+        margin-bottom: 3em;
+
+
         p {
             color: #666;
         }
