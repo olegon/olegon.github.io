@@ -9,6 +9,7 @@ html {
 
 body {
     font: 16px/1.5em sans-serif;
+    color: #444;
 }
 
 *,
@@ -23,9 +24,7 @@ a {
 }
 
 .hero {
-    background: #5f2c82; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #5f2c82 , #49a09d); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #5f2c82 , #49a09d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to left, #5f2c82 , #49a09d);
 
     height: 100vh;
     min-height: 400px;
@@ -52,18 +51,23 @@ a {
 }
 
 .projetos-github {
+    background: linear-gradient(to left, #70e1f5 , #ffd194);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-bottom: 2em;
 }
 
 .projetos-github__titulo {
-    padding: 1em;
+    flex: 1 1 100%;
+    padding-top: 1em;
+    text-align: center;
+    color: #5E2E82;
 }
 
 .projetos-github__projeto {
-    padding: 3em;
+    padding: 2em;
     text-align: center;
     flex: 1 1 100%;
 }
@@ -104,12 +108,21 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background: linear-gradient(to left, #E55D87 , #5FC3E4);
+}
+
+.contatos__titulo {
+    flex: 1 1 100%;
+    padding-top: 1em;
+    text-align: center;
+    color: #eee;
 }
 
 .contatos__contato {
     flex: 1 1 50%;
     text-align: center;
-    margin: 2em 0
+    margin: 2em 0;
+    color: #eee;
 }
 
 @media screen and (min-width: 768px) {
@@ -124,5 +137,11 @@ a {
     .projetos-github__projeto__link {
         display: inline-block;
         margin: 0;
+    }
+
+    .projetos-github__titulo,
+    .contatos__titulo {
+        padding-left: 3em;
+        text-align: left;
     }
 }
