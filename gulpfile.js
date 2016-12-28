@@ -3,12 +3,11 @@ var gulp = require('gulp');
 var htmlmin = require('gulp-htmlmin');
 var sourcemaps = require('gulp-sourcemaps');
 var postcss = require('gulp-postcss');
-var sass = require('gulp-sass');
 var imagemin = require('gulp-imagemin');
 var ghPages = require('gulp-gh-pages');
 
 gulp.task('html', function() {
-    return gulp.src('src/*.html')
+    return gulp.src('./src/index.html')
         .pipe(htmlmin({
             removeComments: true,
             collapseInlineTagWhitespace: true,
@@ -19,8 +18,7 @@ gulp.task('html', function() {
 });
 
 gulp.task('css', function() {
-    return gulp.src('./src/css/main.scss')
-        .pipe(sass().on('error', sass.logError))
+    return gulp.src('./src/css/*.css')
         .pipe(sourcemaps.init())
         .pipe(postcss([require('autoprefixer'), require('cssnano')]))
         .pipe(sourcemaps.write('.'))
