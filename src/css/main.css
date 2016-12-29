@@ -40,6 +40,19 @@ a {
     border-radius: 50%;
     width: 12rem;
     margin-bottom: 2.5em;
+    animation: hero__foto__animation 1000ms ease-in;
+}
+
+@keyframes hero__foto__animation {
+    0% {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .hero__nome {
@@ -48,6 +61,19 @@ a {
     text-align: center;
     border-radius: 3px;
     line-height: 1em;
+    animation: hero__nome__animation 800ms ease-in;
+}
+
+@keyframes hero__nome__animation {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .projetos-github {
@@ -108,7 +134,7 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background: linear-gradient(to left, #E55D87 , #5FC3E4);
+    background: linear-gradient(to left, #49a09d, #5f2c82);
 }
 
 .contatos__titulo {
@@ -121,8 +147,13 @@ a {
 .contatos__contato {
     flex: 1 1 50%;
     text-align: center;
-    margin: 2em 0;
+    padding: 2em 0;
     color: #eee;
+    transition: background-color 500ms;
+}
+
+.contatos__contato:hover {
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
 @media screen and (min-width: 768px) {
