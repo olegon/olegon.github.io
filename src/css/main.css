@@ -1,10 +1,12 @@
-/*html,
-body {
-    -webkit-font-smoothing: antialiased;
-}*/
-
 html {
     box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 body {
@@ -24,10 +26,10 @@ a {
 }
 
 .hero {
-    background: linear-gradient(30deg, #ccc , #444);
+    background-color: #4797E8;
 
-    height: 100vh;
-    min-height: 400px;
+    height: 75vh;
+    min-height: 500px;
     color: #fff;
 
     display: flex;
@@ -53,16 +55,25 @@ a {
     }
 }
 
-.hero__nome {
+.hero__nome,
+.hero__descricao {
     background-color: rgba(0, 0, 0, 0.15);
-    padding: 0.5em 0.75em;
     text-align: center;
     border-radius: 3px;
     line-height: 1em;
-    animation: hero__nome__animation 600ms ease-in;
+    animation: hero__info__animation 600ms ease-in;
 }
 
-@keyframes hero__nome__animation {
+.hero__nome {
+    padding: 0.5em 0.75em;
+}
+
+.hero__descricao {
+    padding: 0.5em 0.75em;
+    margin-top: -0.75em;
+}
+
+@keyframes hero__info__animation {
     0% {
         opacity: 0;
         transform: translateY(50%);
@@ -74,9 +85,33 @@ a {
     }
 }
 
+
+.sobre-mim {
+    height: 60vh;
+    min-height: 400px;
+
+    background-color: #ffe082;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+   
+}
+
+.sobre-mim__desc {
+    max-width: 50em;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 .projetos-github {
     /*background: linear-gradient(to left, #70e1f5 , #ffd194);*/
-    background-color: #f3f1eb;
+    background-color: #f3ba53;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -108,7 +143,7 @@ a {
 
 .projetos-github__projeto__link {
     padding: 0.65em 0.75em;
-    background-color: #4F8397;
+    background-color: #5582af;
     color: #fff;
     border-radius: 4px;
     text-decoration: none;
@@ -134,7 +169,7 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     /*background: linear-gradient(to left, #49a09d, #5f2c82);*/
-    background-color: #f3f1eb;
+    background-color: #30c3d2;
 }
 
 .contatos__titulo {
