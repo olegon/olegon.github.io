@@ -87,17 +87,15 @@ a {
 
 
 .sobre-mim {
-    height: 60vh;
     min-height: 400px;
+    padding: 1rem 0;
 
-    background-color: #ffe082;
+    background-color: #e0e0e0;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
-   
 }
 
 .sobre-mim__desc {
@@ -169,7 +167,7 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     /*background: linear-gradient(to left, #49a09d, #5f2c82);*/
-    background-color: #30c3d2;
+    background-color: #e0e0e0;
 }
 
 .contatos__titulo {
